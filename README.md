@@ -50,26 +50,54 @@ This task further extends Task 2 by including angle calculation. The program:
 
 ## Challenges Faced
 1. **Real-Time Processing**: Ensuring real-time detection and display without significant lag.
+   - **Solution**: Optimized the code to process frames faster by reducing the resolution of the input video stream and using efficient image processing techniques.
 2. **Shape Classification**: Accurate classification of shapes, especially distinguishing between squares and rectangles.
+   - **Solution**: Used aspect ratio calculations to differentiate between squares and rectangles, and implemented contour approximation to classify shapes more accurately.
 3. **Angle Calculation**: Calculating and displaying angles correctly in real-time.
+   - **Solution**: Utilized the `cv2.minAreaRect` function to calculate the angle of the bounding box with respect to the horizontal axis, ensuring correct angle display in real-time.
 
 ## Assumptions
 1. The input will be from a live webcam feed.
 2. The user will manually select the color range using the provided trackbars.
 
 ## How to Run the Code
-1. Install the required dependencies:
+1. Clone the repository:
+    ```bash
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+2. Install the required dependencies:
     ```bash
     pip install opencv-python
     ```
-2. Run the Python script:
+3. Run the Python script:
     ```bash
-    python object_detection.py
+    python Task\ 1.py
+    python Task\ 2.py
+    python Task\ 3.py
     ```
-3. Adjust the HSV trackbars to select the desired color range.
+4. Adjust the HSV trackbars to select the desired color range.
 
 ## Demonstration
 - **Screenshots**: Include screenshots of the application detecting and classifying objects.
+  - ![Screenshot of Task 1](./Screenshot%20of%20Task.png)
+  - ![Screenshot of Task 2](./Screenshot%20of%20Task%202.png)
 - **Video**: Provide a short video demonstrating the functionality.
+  - [Short Video](./Short%20Video.mp4)
 
 ## Directory Structure
+- **Object Detection.ipynb**: Jupyter notebook demonstrating the object detection process.
+- **Object Detection.py**: Python script for object detection.
+- **README.md**: This README file.
+- **Screenshot of Task 2.png**: Screenshot showing the results of Task 2.
+- **Screenshot of Task.png**: Screenshot showing the results of Task 1.
+- **Short Video.mp4**: Video demonstration of the project.
+- **Task 1.ipynb**: Jupyter notebook for Task 1.
+- **Task 1.py**: Python script for Task 1.
+- **Task 2.ipynb**: Jupyter notebook for Task 2.
+- **Task 2.py**: Python script for Task 2.
+- **Task 3.ipynb**: Jupyter notebook for Task 3.
+- **Task 3.py**: Python script for Task 3.
+
+## Additional Information
+For any queries or further assistance, please contact the repository owner.
